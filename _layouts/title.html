@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: "en-US" }}">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <title>{{ page.title }} - {{ site.title }}</title>
+    <link rel="stylesheet" href="{{ "/assets/css/main.css" | relative_url }}">
+  </head>
+  <body>
+    {% include navbar.html %}
+    <div class='container'>
+        <div class="bg-light p-5 rounded-lg m-5">
+          <h1 style="font-family: monospace">Key4Hep 
+          <img width="20%" style="float: right;" src="https://key4hep.github.io/key4hep-doc/_images/key4hep_logo2.svg"/>
+        </h1>
+          <p>The turnkey software stack for HEP and NP experiments</p>
+        </div>
+
+    </div>
+    <div class="container">
+      <div class="col-md-12 p-5">
+          {{ content }}
+      </div>
+  </div>
+  {% include footer.html %}
+  </body>
+</html>
